@@ -22,39 +22,37 @@ This document models the **MVP architecture** using the **C4 model**. The system
 ## System Context Diagram
 
 **Actors:**
-
-- Student  
-- Instructor  
-- Administrator  
+- Student
+- Instructor
+- Administrator
 
 **External Systems:**
-
-- Payment Gateway (Stripe/PayFast)  
-- Email Service (SendGrid)  
-- SMS Service (Twilio)  
+- Payment Gateway (Stripe/PayFast)
+- Email Service (SendGrid)
+- SMS Service (Twilio)
 
 **Mermaid Diagram:**
 
 ```mermaid
 C4Context
-    title System Context diagram for THE IT CODE ACADEMY
+title System Context diagram for THE IT CODE ACADEMY
 
-    Person(student, "Student", "Youth in the community who enroll in courses and track progress.")
-    Person(instructor, "Instructor", "Creates and manages courses and quizzes.")
-    Person(admin, "Administrator", "Manages users, instructors, and system settings.")
+Person(student, "Student", "Youth in the community who enroll in courses and track progress.")
+Person(instructor, "Instructor", "Creates and manages courses and quizzes.")
+Person(admin, "Administrator", "Manages users, instructors, and system settings.")
 
-    System(elearning, "THE IT CODE ACADEMY System", "Allows students to access free lessons and paid certifications, track progress, and receive notifications.")
+System(elearning, "THE IT CODE ACADEMY System", "Allows students to access free lessons and paid certifications, track progress, and receive notifications.")
 
-    System_Ext(paymentGateway, "Payment Gateway (Stripe/PayFast)", "Processes payments for certification subscriptions.")
-    System_Ext(emailService, "Email Service (SendGrid)", "Sends notifications to students and instructors.")
-    System_Ext(smsService, "SMS Service (Twilio)", "Sends SMS notifications to students.")
+System_Ext(paymentGateway, "Payment Gateway (Stripe/PayFast)", "Processes payments for certification subscriptions.")
+System_Ext(emailService, "Email Service (SendGrid)", "Sends notifications to students and instructors.")
+System_Ext(smsService, "SMS Service (Twilio)", "Sends SMS notifications.")
 
-    Rel(student, elearning, "Uses to access lessons, take quizzes, track progress")
-    Rel(instructor, elearning, "Uses to create and manage courses and quizzes")
-    Rel(admin, elearning, "Uses to manage users and monitor platform")
-    Rel(elearning, paymentGateway, "Uses for subscription payments")
-    Rel(elearning, emailService, "Sends email notifications")
-    Rel(elearning, smsService, "Sends SMS notifications")
+Rel(student, elearning, "Uses to access lessons, take quizzes, track progress")
+Rel(instructor, elearning, "Uses to create and manage courses and quizzes")
+Rel(admin, elearning, "Uses to manage users and monitor platform")
+Rel(elearning, paymentGateway, "Uses for subscription payments")
+Rel(elearning, emailService, "Sends email notifications")
+Rel(elearning, smsService, "Sends SMS notifications")
 
 ---
 
