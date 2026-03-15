@@ -1,4 +1,4 @@
-# System Specification 
+# System Specification
 
 ## Project Title
 THE IT CODE ACADEMY
@@ -7,23 +7,36 @@ THE IT CODE ACADEMY
 Education Technology (EdTech)
 
 ## Domain Description
-Education Technology platforms use digital solutions to enhance learning. E-learning platforms enable students to access educational content online, providing flexibility and scalability. In underserved communities, access to ICT and programming training is often limited. THE IT CODE ACADEMY bridges this gap by providing free online learning resources with an optional certification path.
+THE IT CODE ACADEMY is a web-based platform that provides **free basic ICT and programming lessons** to youth in underserved communities. The platform also offers a **paid membership** for learners who want certification. It is designed to be **secure, scalable, and user-friendly**, using **Java** for the backend and **Angular + VanillaJS** for the frontend.
 
 ## Problem Statement
-Youth in underserved communities often cannot access affordable ICT and programming education. Traditional institutions charge high fees or require physical attendance. This limits opportunities for digital skills development, which are increasingly essential in the modern workforce.
+Youth in underserved communities often lack access to affordable ICT education. Traditional educational institutions are expensive and require physical attendance. THE IT CODE ACADEMY addresses this gap by providing an online learning platform with:
 
-THE IT CODE ACADEMY addresses this problem by providing free learning modules and optional paid certification programs for learners seeking formal recognition.
+- Free access to ICT and programming lessons  
+- Optional paid certifications  
+- Progress tracking  
+- Notifications via email/SMS  
+- Secure login and payment management  
 
 ## Individual Scope
-This project focuses on **system specification and architectural design** for THE IT CODE ACADEMY.
+This project focuses on **system specification and architectural modeling**. The MVP will include:
 
-The system will support:
+- **User Management:** registration, login, and role-based access (Student, Instructor, Admin)  
+- **Course and Lesson Management:** CRUD for instructors, viewing for students  
+- **Progress Tracking:** track lessons completed, quizzes taken  
+- **Notifications:** email/SMS upon registration, course updates  
+- **Subscriptions / Paid Memberships:** simulated payment and access control  
+- **Security:** JWT authentication, HTTPS, hashed passwords  
+- **Dummy Data Support:** pre-populated users, courses, lessons, and quizzes for testing  
 
-- User registration and authentication
-- Access to free learning modules
-- Course and lesson management
-- Online quizzes and assessments
-- Learner progress tracking
-- Optional paid certification
-- Instructor content management
-- Administrative reporting
+### Features to Include in MVP
+| Feature | Description |
+|---------|------------|
+| User Registration/Login | JWT-based authentication, role-based access |
+| Courses & Lessons | CRUD operations for instructors, view-only for students |
+| Quizzes | Multiple-choice quizzes with immediate feedback |
+| Progress Tracking | Track lesson completion and quiz scores |
+| Notifications | Email/SMS upon registration, course updates |
+| Paid Memberships | Optional certification access, simulated payments |
+| Security | HTTPS, hashed passwords, JWT, role-based access |
+| Dummy Data | Pre-populated users, courses, lessons, quizzes |
