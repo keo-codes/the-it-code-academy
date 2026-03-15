@@ -31,7 +31,6 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - Email Service (SendGrid)
 - SMS Service (Twilio)
 
-```markdown
 ```` ```mermaid ````
 C4Context
 title System Context diagram for THE IT CODE ACADEMY
