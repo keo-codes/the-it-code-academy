@@ -12,10 +12,10 @@ Youth in underserved communities often lack affordable access to ICT and program
 ## Individual Scope
 This document models the **MVP architecture** using the **C4 model**. The system includes:
 
-- **System Context Diagram**
-- **Container Diagram**
-- **Component Diagram**
-- **Support for dummy data** to simulate users, courses, lessons, quizzes, and payments.
+- System Context Diagram
+- Container Diagram
+- Component Diagram
+- Support for dummy data to simulate users, courses, lessons, quizzes, and payments.
 
 ---
 
@@ -53,8 +53,6 @@ Rel(admin, elearning, "Uses to manage users and monitor platform")
 Rel(elearning, paymentGateway, "Uses for subscription payments")
 Rel(elearning, emailService, "Sends email notifications")
 Rel(elearning, smsService, "Sends SMS notifications")
-
----
 
 ## Container Diagram
 
