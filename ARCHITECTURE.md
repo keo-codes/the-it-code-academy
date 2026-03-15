@@ -32,6 +32,7 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - SMS Service (Twilio)
 
 ```` ```mermaid ````
+````markdown
 C4Context
 title System Context diagram for THE IT CODE ACADEMY
 
