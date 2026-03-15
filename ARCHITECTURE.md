@@ -17,6 +17,7 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - Component Diagram
 - Support for dummy data to simulate users, courses, lessons, quizzes, and payments.
 
+```markdown
 ## System Context Diagram
 
 **Actors:**
