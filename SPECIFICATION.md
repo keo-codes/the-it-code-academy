@@ -1,5 +1,4 @@
 # System Specification 
-# System Specification
 
 ## Project Title
 THE IT CODE ACADEMY
