@@ -19,7 +19,6 @@ This document models the **MVP architecture** using the **C4 model**. The system
 
 ---
 
-```markdown
 ## System Context Diagram
 
 **Actors:**
@@ -32,6 +31,7 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - Email Service (SendGrid)
 - SMS Service (Twilio)
 
+```markdown
 ```mermaid
 C4Context
 title System Context diagram for THE IT CODE ACADEMY
@@ -66,6 +66,7 @@ Rel(elearning, smsService, "Sends SMS notifications")
 
 **Mermaid Diagram:**
 
+```markdown
 ```mermaid
 C4Container
     title Container diagram for THE IT CODE ACADEMY
@@ -86,6 +87,8 @@ C4Container
     Rel(api, notificationEmail, "Sends email notifications")
     Rel(api, notificationSMS, "Sends SMS notifications")
 
+---
+
 ## Component Diagram (Backend API)
 
 **Components:**
@@ -99,6 +102,7 @@ C4Container
 
 **Mermaid Diagram:**
 
+```markdown
 ```mermaid
 C4Component
     title Component diagram for Backend API
