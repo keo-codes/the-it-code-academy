@@ -21,7 +21,7 @@ This document models the **MVP architecture** using the **C4 model**. The system
 
 ## System Context Diagram
 
-![System Context Diagram](C4-Diagrams/System%20Context%20Diagram.png)
+![System Context Diagram](C4-Diagrams/System-Context-Diagram.png)
 
 Actors:
 - Student
@@ -37,7 +37,7 @@ External Systems:
 
 ## Container Diagram
 
-![Container Diagram](C4-Diagrams/Container%20Diagram.png)
+![Container Diagram](C4-Diagrams/Container-Diagram.png)
 
 Containers:
 
@@ -50,7 +50,7 @@ Containers:
 
 ## Component Diagram (Backend API)
 
-![Component Diagram](C4-Diagrams/Component%20Diagram.png)
+![Component Diagram](C4-Diagrams/Component-20Diagram.png)
 
 Components:
 
