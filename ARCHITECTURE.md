@@ -17,8 +17,6 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - Component Diagram
 - Support for dummy data to simulate users, courses, lessons, quizzes, and payments.
 
----
-
 ## System Context Diagram
 
 **Actors:**
@@ -84,8 +82,6 @@ C4Container
     Rel(api, payment, "Processes subscription payments")
     Rel(api, notificationEmail, "Sends email notifications")
     Rel(api, notificationSMS, "Sends SMS notifications")
-
----
 
 ## Component Diagram (Backend API)
 
