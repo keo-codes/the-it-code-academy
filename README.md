@@ -44,9 +44,9 @@ THE-IT-CODE-ACADEMY
 ├── ARCHITECTURE.md
 │
 └── C4-Diagrams
-├── system-context-diagram.png
-├── container-diagram.png
-└── component-diagram.png
+    ├── system-context-diagram.png
+    ├── container-diagram.png
+    └── component-diagram.png
 
 ---
 ## Author
