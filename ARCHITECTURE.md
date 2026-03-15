@@ -52,7 +52,7 @@ Rel(admin, elearning, "Uses to manage users and monitor platform")
 Rel(elearning, paymentGateway, "Uses for subscription payments")
 Rel(elearning, emailService, "Sends email notifications")
 Rel(elearning, smsService, "Sends SMS notifications")
-```
+````
 
 ---
 
@@ -67,8 +67,8 @@ Rel(elearning, smsService, "Sends SMS notifications")
 
 **Mermaid Diagram:**
 
-```` ```mermaid ````
 ````markdown
+```` ```mermaid ````
 C4Container
     title Container diagram for THE IT CODE ACADEMY
 
@@ -87,7 +87,7 @@ C4Container
     Rel(api, payment, "Processes subscription payments")
     Rel(api, notificationEmail, "Sends email notifications")
     Rel(api, notificationSMS, "Sends SMS notifications")
-```` ``` ````
+````
 
 ---
 
@@ -104,8 +104,8 @@ C4Container
 
 **Mermaid Diagram:**
 
-```` ```mermaid ````
 ````markdown
+```` ```mermaid ````
 C4Component
     title Component diagram for Backend API
 
@@ -125,4 +125,4 @@ C4Component
     Rel(progressService, database, "Reads/Writes progress data")
     Rel(paymentService, database, "Reads/Writes payment/subscription data")
     Rel(notificationService, database, "Reads/Writes notification logs")
-```` ``` ````
+````
