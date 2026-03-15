@@ -37,6 +37,7 @@ This document contains the **C4 architectural diagrams** and explains the system
 ## Repository Structure
 ---
 
+```markdown
 THE-IT-CODE-ACADEMY
 │
 ├── README.md
@@ -47,7 +48,7 @@ THE-IT-CODE-ACADEMY
     ├── system-context-diagram.png
     ├── container-diagram.png
     └── component-diagram.png
-
+```
 ---
 ## Author
 
