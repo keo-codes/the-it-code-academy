@@ -7,25 +7,40 @@ THE IT CODE ACADEMY
 Education Technology (EdTech)
 
 ## Problem Statement
-Youth in underserved communities often lack affordable access to ICT and programming training. THE IT CODE ACADEMY provides a scalable online platform to deliver free learning modules and optional paid certifications.
+Youth in underserved communities need affordable access to ICT and programming education. THE IT CODE ACADEMY provides a **free and optionally paid online platform** with secure authentication, progress tracking, notifications, and certification options.
 
 ## Individual Scope
-This project models the architecture of THE IT CODE ACADEMY using the **C4 model**:
+This architecture draft represents the MVP using **C4 modeling**. The system includes:
 
-- System Context Diagram
-- Container Diagram
-- Component Diagram
+- **System Context Diagram**  
+- **Container Diagram**  
+- **Component Diagram**  
+- **Dummy data support**  
 
 ---
 
-# C4 System Context Diagram
+## System Context Diagram
+
+**Actors:**
+
+- Student  
+- Instructor  
+- Administrator  
+
+**External Systems:**
+
+- Payment Gateway (Stripe/PayFast)  
+- Email Service (SendGrid)  
+- SMS Service (Twilio)  
+
+**Diagram:**
 
 ```mermaid
 flowchart TD
-
 Student --> ElearningPlatform
 Instructor --> ElearningPlatform
 Administrator --> ElearningPlatform
-
 ElearningPlatform --> PaymentGateway
+ElearningPlatform --> EmailService
+ElearningPlatform --> SMSService
 ElearningPlatform --> Database
