@@ -18,7 +18,7 @@ This document models the **MVP architecture** using the **C4 model**. The system
 - Support for dummy data to simulate users, courses, lessons, quizzes, and payments.
 
 ---
-
+```mermaid
 ## System Context Diagram
 
 **Actors:**
