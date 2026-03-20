@@ -1,10 +1,11 @@
-## Stakeholder Analysis Table
+# Stakeholder Analysis Table - THE IT CODE ACADEMY
 
-| Stakeholder | Role | Key Concerns | Pain Points | Success Metrics |
-|------------|------|-------------|------------|----------------|
-| Student | Enrolls in courses, takes quizzes, tracks progress | Easy access to learning materials, progress tracking, affordable certification | Limited access to ICT education, expensive courses elsewhere | Course completion rate ≥ 80%, user satisfaction ≥ 85% |
-| Instructor | Creates and manages courses and quizzes | Ability to upload content easily, track student performance | Difficulty managing large numbers of students manually | Course engagement rate ≥ 75%, reduced content upload time |
-| Administrator | Manages users, instructors, and system settings | System stability, user management, reporting | Manual system monitoring, lack of centralized control | System uptime ≥ 99%, reduced admin workload |
-| Payment Provider (Stripe/PayFast) | Processes payments for certifications | Secure, reliable payment processing | Fraud risks, transaction failures | Payment success rate ≥ 98%, low fraud incidents |
-| System Administrator (IT Staff) | Maintains system infrastructure and deployment | System performance, scalability, uptime | Downtime, performance bottlenecks | System availability ≥ 99%, response time ≤ 2 seconds |
-| Content Creator | Designs and uploads learning materials | Ease of content creation and updates | Lack of intuitive tools for content upload | Content upload time reduced by 50%, increased course quality |
+| Stakeholder                  | Role                                                                 | Key Concerns                                      | Pain Points                                      | Success Metrics                                      |
+|------------------------------|----------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------------|------------------------------------------------------|
+| Students (Youth Learners)    | Primary end-users accessing free lessons, quizzes and progress tracking | Free access, intuitive mobile-friendly interface, real-time progress | No structured free ICT education in communities; hard to track learning | ≥70% course completion rate; ≥90% usability satisfaction |
+| Instructors                  | Content creators who build courses, lessons and quizzes              | Easy content upload & automated grading tools     | Manual processes and no integrated platform      | Course created/published in ≤2 hours; 50% less grading time |
+| System Administrators        | Oversee user management, security and platform operations            | Data security, system uptime and monitoring       | Manual user verifications and multi-service tracking | 99.9% uptime; admin issues resolved in ≤1 hour       |
+| Parents/Guardians            | Monitor youth learners' progress and safety                          | Child safety online and visibility into activity  | No oversight tools in digital learning           | Weekly progress reports delivered; ≥80% parental approval |
+| IT Support Staff             | Maintain system, integrations (Stripe, SendGrid, Twilio) and troubleshooting | Reliable third-party integrations and logs        | Integration failures and deployment complexity   | Mean time to resolution ≤30 min; 100% integration uptime |
+| Payment Gateway Providers (Stripe/PayFast) | Handle secure certification payments                        | PCI-DSS compliance and seamless API integration   | Transaction failures and security breaches       | 100% successful transactions; zero breaches          |
+| Notification Service Providers (SendGrid/Twilio) | Deliver email & SMS reminders and announcements             | High delivery rate and cost efficiency            | Failed deliveries reducing user engagement       | ≥95% delivery rate; 20% increase in user retention   |
