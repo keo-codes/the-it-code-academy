@@ -55,3 +55,10 @@ THE-IT-CODE-ACADEMY
 Student: Keorapetse Makhubo  
 Course: Software Engineering  
 Project: System Specification and Architectural Modeling
+
+---
+
+## Documentation
+- [Stakeholder Analysis Table](stakeholder_analysis.md)
+- [System Requirements Document (SRD)](system_requirements_document.md)
+- [Reflection on Stakeholder Needs](reflection.md)
