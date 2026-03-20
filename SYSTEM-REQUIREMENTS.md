@@ -4,7 +4,7 @@
 **Builds directly on**: Assignment 3 SPECIFICATION.md (MVP scope, user roles, course/quiz/progress/certification/notification features)
 
 ## 1. Stakeholder Analysis
-See separate file: [stakeholder_analysis.md](stakeholder_analysis.md) for the complete table (7 stakeholders with roles, concerns, pain points and metrics). All requirements below are traceable to these stakeholders.
+See separate file: [STAKEHOLDER-ANALYSIS.md](STAKEHOLDER-ANALYSIS.md) for the complete table (7 stakeholders with roles, concerns, pain points and metrics). All requirements below are traceable to these stakeholders.
 
 ## 2. Functional Requirements (12 requirements – exceeds 10+)
 
