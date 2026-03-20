@@ -59,6 +59,6 @@ Project: System Specification and Architectural Modeling
 ---
 
 ## Documentation
-- [Stakeholder Analysis Table](stakeholder_analysis.md)
-- [System Requirements Document (SRD)](system_requirements_document.md)
-- [Reflection on Stakeholder Needs](reflection.md)
+- [Stakeholder Analysis Table](STAKEHOLDER-ANALYSIS.md)
+- [System Requirements Document (SRD)](SYSTEM-REQUIREMENTS.md)
+- [Reflection on Stakeholder Needs](REFLECTION.md)
