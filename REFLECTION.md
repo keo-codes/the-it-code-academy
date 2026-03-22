@@ -1,6 +1,6 @@
 # Reflection – Challenges Faced in Balancing Stakeholder Needs
 
-**Project**: THE IT CODE ACADEMY (Assignment 4, builds on Assignment 3)
+**Project**: THE IT CODE ACADEMY
 
 The biggest challenge was balancing **free core access** (Students’ top priority) with **sustainable revenue** through paid certifications (needed by Administrators and Payment Providers). A purely free model would not cover third-party service costs (Stripe, Twilio), while forcing payment would exclude the underserved youth the platform targets. Solution: kept all lessons and quizzes free (addresses Students’ pain points) while making certification optional and clearly priced.
 
