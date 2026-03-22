@@ -6,7 +6,7 @@
 ## 1. Stakeholder Analysis
 See separate file: [STAKEHOLDER-ANALYSIS.md](STAKEHOLDER-ANALYSIS.md) for the complete table (7 stakeholders with roles, concerns, pain points and metrics). All requirements below are traceable to these stakeholders.
 
-## 2. Functional Requirements (12 requirements – exceeds 10+)
+## 2. Functional Requirements
 
 1. The system shall allow users to register an account with email/password and select role (Student, Instructor or Admin).  
    *Acceptance criteria*: Email verification link sent; duplicate emails blocked.
@@ -35,7 +35,7 @@ See separate file: [STAKEHOLDER-ANALYSIS.md](STAKEHOLDER-ANALYSIS.md) for the co
 
 (All functional requirements directly address pain points and concerns listed in the stakeholder table.)
 
-## 3. Non-Functional Requirements (10 requirements – exceeds 8+)
+## 3. Non-Functional Requirements
 
 **Usability**  
 - The user interface shall be fully responsive and comply with WCAG 2.1 accessibility standards (critical for low-bandwidth users in underserved communities).  
