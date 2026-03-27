@@ -1,5 +1,62 @@
 # THE IT CODE ACADEMY
 
+usecaseDiagram
+    actor Student
+    actor Instructor
+    actor Administrator
+    actor "Parent/Guardian" as Parent
+    actor "Payment Gateway" as Payment
+    actor "Notification Service" as Notification
+    actor "IT Support Staff" as Support
+
+    usecase "Register Account" as UC1
+    usecase "Authenticate User" as UC2
+    usecase "Browse Courses" as UC3
+    usecase "Enroll in Course" as UC4
+    usecase "Create Course" as UC5
+    usecase "Upload Lesson Content" as UC6
+    usecase "Create Quiz" as UC7
+    usecase "Take Quiz" as UC8
+    usecase "View Progress Dashboard" as UC9
+    usecase "Process Certification Payment" as UC10
+    usecase "Generate Progress Report" as UC11
+    usecase "Manage User Accounts" as UC12
+    usecase "Send Notification" as UC13
+
+    Student --> UC1
+    Student --> UC2
+    Student --> UC3
+    Student --> UC4
+    Student --> UC8
+    Student --> UC9
+    Student --> UC10
+
+    Instructor --> UC2
+    Instructor --> UC5
+    Instructor --> UC6
+    Instructor --> UC7
+
+    Administrator --> UC2
+    Administrator --> UC11
+    Administrator --> UC12
+
+    Parent --> UC9
+    Parent --> UC11
+
+    Payment --> UC10
+    Notification --> UC13
+
+    UC4 ..> UC3 : <<include>>
+    UC4 ..> UC2 : <<include>>
+    UC8 ..> UC2 : <<include>>
+    UC10 ..> UC13 : <<extend>>
+    UC5 ..> UC2 : <<include>>
+    UC6 ..> UC2 : <<include>>
+    UC7 ..> UC2 : <<include>>
+    UC9 ..> UC2 : <<include>>
+    UC11 ..> UC2 : <<include>>
+    UC12 ..> UC2 : <<include>>
+
 ## Project Description
 
 THE IT CODE ACADEMY is a web-based learning platform designed to provide **accessible ICT and programming education** to youth in underserved communities.
