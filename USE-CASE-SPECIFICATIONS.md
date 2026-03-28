@@ -33,21 +33,68 @@
 - Invalid credentials -> Login failed (3 attempts lock account).
 - Deny access
 
-## USE CASE 3: Enroll Course
+## USE CASE 3: Authenticate User
+
+**Actor:** User <br>
+**Description:** Secure login with RBAC <br>
+**Preconditions:** User is logged in <br>
+
+### Basic Flow
+1. User enters email and password.
+2. System verifies credentials and issues JWTT.
+3. Access granted
+4. System redirects to role-specific dashboard.
+
+### Alternative Flow
+- Invalid credentials -> Login failed (3 attempts lock account).
+- Deny access
+
+## USE CASE 4: Login
+
+**Actor:** User <br>
+**Description:** Authenticate user access <br>
+**Preconditions:** Account exists <br>
+**Postconditions:** User is logged in <br>
+
+### Basic Flow
+1. User enters email and password.
+2. System verifies credentials and issues JWTT.
+3. Access granted
+4. System redirects to role-specific dashboard.
+
+### Alternative Flow
+- Invalid credentials -> Login failed (3 attempts lock account).
+- Deny access
+
+## USE CASE 5: Browse Courses
 
 **Actor:** Student <br>
-**Description:** Student joins a course <br>
-**Preconditions:** Logged in <br>
-**Postconditions:** Enrollement recorded <br>
+**Description:** Search and view available courses <br>
+**Preconditions:** User is logged in <br>
+**Postconditions:** Course list displayed with real-time status <br>
+
+### Basic Flow
+1. Student enters search term or filters by topic
+2. System returns matching courses
+
+### Alternative Flow
+- No results -> "No courses found" suggestion
+
+## USE CASE 6: Enroll in Course
+
+**Actor:** Student <br>
+**Description:** Student enrolls in a free course <br>
+**Preconditions:** Logged in, course id free and available <br>
+**Postconditions:** Enrollement recorded, progress tracking starts <br>
 
 ### Basic Flow
 1. Browse courses
 2. Select course
 3. Enroll
-4. System confirms
+4. System confirms enrollment
 
 ### Alternative Flow
-- Already enrolled -> message
+- Course already enrolled -> message "Already enrolled".
 
 ## USE CASE 4: Access Lessons
 
@@ -64,15 +111,15 @@
 ## USE CASE 5: Take Quiz
 
 **Actor:** Student <br>
-**Description:** Attempt quiz <br>
-**Preconditions:** Lesson completed <br>
-**Postconditions:** Score saved <br>
+**Description:** Attempt a multi-choice quiz <br>
+**Preconditions:** Enrolled in course with quiz available <br>
+**Postconditions:** Score recorded and progress updated <br>
 
 ### Basic Flow
 1. Start quiz
 2. Answer questions
 3. Submit
-4. Score calculated
+4. System presents questions with auto-grading on submission
 
 ### Alternative Flow
 - Timeout -> auto-submit
@@ -82,12 +129,14 @@
 **Actor:** Instructor <br>
 **Description:** Create course content <br>
 **Preconditions:** Logged in <br>
-**Postconditions:** Course available <br>
+**Postconditions:** Course available and can be published <br>
 
 ### Basic Flow
-1. Enter details
-2. Upload lessons
-3. Save
+1. Enter details such as Title, description, topic
+2. System saves draft
+
+### Already Flows
+- Missing required fields -> validation error
 
 ## USE CASE 7: Purchase Certificate
 
@@ -109,11 +158,28 @@
 
 **Actor:** Student/Instructor/Parent/Guardian <br>
 **Description:** View learning progress <br>
-**Preconditions:** Data exists <br>
-**Postconditions:** Progress displayed <br>
+**Preconditions:** Logged in <br>
+**Postconditions:** Dashboard displays completion %, quiz scores <br>
 
 ### Basic Flow
-1. Open dashboard
-2. Retrieve data
-3. Display result
+1. User open dashboard
+2. System retrieves and displays data
+
+### Alternative Flows
+- No data yet -> "Start your first course" prompt
+
+## USE CASE 9: Process Certificate Payment
+
+**Actor:** Student <br>
+**Description:** Handles paid certification via external gateway <br>
+**Preconditions:** Student completed required courses <br>
+**Postconditions:** Payment recorded, certification eigibility updated, notification sent <br>
+
+### Basic Flow
+1. Student initiates payment
+2. System redirects to gateway
+3. On success, updates status and triggers notification
+
+### Alternative Flow
+- Payment fails -> error message and retry option
 
