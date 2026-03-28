@@ -1,9 +1,9 @@
 ## USE CASE 1: Register Account
 
-**Actor:** User
-**Description:** Allows new users to create an account
-**Preconditions:** User not registered
-**Postconditions:** Account stored in database
+**Actor:** User <br>
+**Description:** Allows new users to create an account <br>
+**Preconditions:** User not registered <br>
+**Postconditions:** Account stored in database <br>
 
 ### Basic Flow
 1. User enters email, password, and selects role
@@ -18,10 +18,10 @@
 
 ## USE CASE 2: Login
 
-**Actor:** User
-**Description:** Authenticate user access
-**Preconditions:** Account exists
-**Postconditions:** User is logged in 
+**Actor:** User <br>
+**Description:** Authenticate user access <br>
+**Preconditions:** Account exists <br>
+**Postconditions:** User is logged in <br>
 
 ### Basic Flow
 1. User enters email and password.
@@ -35,10 +35,10 @@
 
 ## USE CASE 3: Enroll Course
 
-**Actor:** Student
-**Description:** Student joins a course
-**Preconditions:** Logged in
-**Postconditions:** Enrollement recorded
+**Actor:** Student <br>
+**Description:** Student joins a course <br>
+**Preconditions:** Logged in <br>
+**Postconditions:** Enrollement recorded <br>
 
 ### Basic Flow
 1. Browse courses
@@ -51,10 +51,10 @@
 
 ## USE CASE 4: Access Lessons
 
-**Actor:** Student
-**Description:** View course content
-**Preconditions:** Enrolled
-**Postconditions:** Lesson marked accessed
+**Actor:** Student <br>
+**Description:** View course content <br>
+**Preconditions:** Enrolled <br>
+**Postconditions:** Lesson marked accessed <br>
 
 ### Basic Flow
 1. Open course
@@ -63,10 +63,10 @@
 
 ## USE CASE 5: Take Quiz
 
-**Actor:** Student
-**Description:** Attempt quiz
-**Preconditions:** Lesson completed
-**Postconditions:** Score saved
+**Actor:** Student <br>
+**Description:** Attempt quiz <br>
+**Preconditions:** Lesson completed <br>
+**Postconditions:** Score saved <br>
 
 ### Basic Flow
 1. Start quiz
@@ -79,10 +79,10 @@
 
 ## USE CASE 6: Creator Course
 
-**Actor:** Instructor
-**Description:** Create course content
-**Preconditions:** Logged in
-**Postconditions:** Course available
+**Actor:** Instructor <br>
+**Description:** Create course content <br>
+**Preconditions:** Logged in <br>
+**Postconditions:** Course available <br>
 
 ### Basic Flow
 1. Enter details
@@ -91,10 +91,10 @@
 
 ## USE CASE 7: Purchase Certificate
 
-**Actor:** Student
-**Description:** Pay for certification 
-**Preconditions:** Course completed
-**Postconditions:** Payment record
+**Actor:** Student <br>
+**Description:** Pay for certification <br>
+**Preconditions:** Course completed <br>
+**Postconditions:** Payment record <br>
 
 ### Basic Flow
 1. Select certificate
@@ -107,10 +107,10 @@
 
 ## USE CASE 8: View Progress 
 
-**Actor:** Student/Instructor/Parent/Guardian
-**Description:** View learning progress
-**Preconditions:** Data exists
-**Postconditions:** Progress displayed
+**Actor:** Student/Instructor/Parent/Guardian <br>
+**Description:** View learning progress <br>
+**Preconditions:** Data exists <br>
+**Postconditions:** Progress displayed <br>
 
 ### Basic Flow
 1. Open dashboard
