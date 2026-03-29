@@ -1,36 +1,43 @@
-# IT Code Academy - Use Case Diagram (Mermaid.js)
+graph LR
+    %% =============================================
+    %% ACTORS (shown as circles)
+    %% =============================================
+    Student((Student))
+    Instructor((Instructor))
+    Admin((Administrator))
+    Parent((Parent/Guardian))
+    PaymentGateway((Payment Gateway))
+    NotificationService((Notification Service))
 
-```mermaid
-```usecase
-    left to right direction
+    %% =============================================
+    %% SYSTEM BOUNDARY
+    %% =============================================
+    subgraph "IT Code Academy System"
+        direction TB
 
-    actor "Student" as Student
-    actor "Instructor" as Instructor
-    actor "Administrator" as Admin
-    actor "Parent/Guardian" as Parent
-    actor "Payment Gateway" as PaymentGateway
-    actor "Notification Service" as NotificationService
+        UC1([Create User Account])
+        UC2([Login])
+        UC3([Authenticate])
+        UC4([Browse Courses])
+        UC5([Enroll Course])
+        UC6([Take Lessons])
+        UC7([Take Quiz])
+        UC8([View Student Progress])
+        UC9([Create Course])
+        UC10([Upload Lessons])
+        UC11([Create Quiz])
+        UC12([Process Payment])
+        UC13([Send Notifications])
+        UC14([Manage Users])
+        UC15([Generate Student Report])
+        UC16([Checks Availability])
+        UC17([Handle Failed Payment])
+    end
 
-    rectangle "IT Code Academy System" {
-        usecase "Create User Account" as UC1
-        usecase "Login" as UC2
-        usecase "Authenticate" as UC3
-        usecase "Browse Courses" as UC4
-        usecase "Enroll Course" as UC5
-        usecase "Take Lessons" as UC6
-        usecase "Take Quiz" as UC7
-        usecase "View Student Progress" as UC8
-        usecase "Create Course" as UC9
-        usecase "Upload Lessons" as UC10
-        usecase "Create Quiz" as UC11
-        usecase "Process Payment" as UC12
-        usecase "Send Notifications" as UC13
-        usecase "Manage Users" as UC14
-        usecase "Generate Student Report" as UC15
-        usecase "Checks Availability" as UC16
-        usecase "Handle Failed Payment" as UC17
-    }
-
+    %% =============================================
+    %% RELATIONSHIPS
+    %% =============================================
+    %% Student interactions
     Student --> UC1
     Student --> UC2
     Student --> UC4
@@ -40,22 +47,31 @@
     Student --> UC8
     Student --> UC12
 
+    %% Instructor interactions
     Instructor --> UC9
     Instructor --> UC10
     Instructor --> UC11
     Instructor --> UC8
 
+    %% Administrator interactions
     Admin --> UC14
     Admin --> UC15
     Admin --> UC1
 
+    %% Parent interactions
     Parent --> UC8
     Parent --> UC13
 
-    PaymentGateway ..> UC12 : <<include>>
-    NotificationService ..> UC13 : <<include>>
+    %% External services
+    PaymentGateway -.->|<<include>>| UC12
+    NotificationService -.->|<<include>>| UC13
 
-    UC2 ..> UC3 : <<include>>
-    UC5 ..> UC16 : <<include>>
-    UC7 ..> UC16 : <<include>>
-    UC17 -.-> UC12 : <<extend>>
+    %% Internal includes & extends
+    UC2 -.->|<<include>>| UC3
+    UC5 -.->|<<include>>| UC16
+    UC7 -.->|<<include>>| UC16
+    UC17 -.->|<<extend>>| UC12
+
+    %% Optional: make use cases look more like UML ovals
+    classDef usecase fill:#f9f,stroke:#333,stroke-width:2px;
+    class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10,UC11,UC12,UC13,UC14,UC15,UC16,UC17 usecase
