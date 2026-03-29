@@ -1,5 +1,5 @@
-# Stakeholder Analysis Table  
-## IT Code Academy
+# STAKEHOLDER ANALYSIS TABLE 
+## THE IT CODE ACADEMY
 
 | Stakeholder | Role | Key Concerns | Pain Points | Success Metrics |
 |------------|------|-------------|-------------|----------------|
