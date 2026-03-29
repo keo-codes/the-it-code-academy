@@ -1,3 +1,12 @@
+# Use Case Diagram - IT Code Academy
+
+**Assignment 5: Use Case Modeling**
+
+This diagram shows all actors and use cases for the IT Code Academy system, fully aligned with the functional requirements from Assignment 4 and the original `.drawio` file.
+
+## Use Case Diagram (Mermaid)
+
+```mermaid
 graph LR
     %% =============================================
     %% ACTORS (shown as circles)
@@ -72,6 +81,6 @@ graph LR
     UC7 -.->|<<include>>| UC16
     UC17 -.->|<<extend>>| UC12
 
-    %% Optional: make use cases look more like UML ovals
+    %% Styling - makes use cases look like UML ovals
     classDef usecase fill:#f9f,stroke:#333,stroke-width:2px;
     class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10,UC11,UC12,UC13,UC14,UC15,UC16,UC17 usecase
