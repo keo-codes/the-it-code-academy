@@ -1,7 +1,7 @@
 # IT Code Academy - Use Case Diagram (Mermaid.js)
 
 ```mermaid
-usecase
+```usecase
     left to right direction
 
     actor "Student" as Student
