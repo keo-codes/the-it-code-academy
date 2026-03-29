@@ -1,4 +1,5 @@
-# Use Case Diagrams
+# USE CASE DIAGRAM
+## THE IT CODE ACADEMY
 
 ### Mermaid 
 ```mermaid
