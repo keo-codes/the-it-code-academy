@@ -80,13 +80,6 @@ graph LR
     UC2 -.->|<<include>>| UC3
     UC5 -.->|<<include>>| UC18
     UC7 -.->|<<include>>| UC18
-```
-
-### Use Case Diagram Picture
-
-![Use Case Diagram](Use-Case-Diagram/Use-Case-Diagram.png)
-
-
 
     %% STYLING
     classDef usecase fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000;
@@ -94,3 +87,9 @@ graph LR
 
     classDef actor fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000;
     class Student,Instructor,Admin,Parent,PaymentGteway,NotificationService actorr
+
+```
+
+### Use Case Diagram Picture
+
+![Use Case Diagram](Use-Case-Diagrams/Use-Case-Diagram.png)
