@@ -1,11 +1,12 @@
-# Stakeholder Analysis Table - THE IT CODE ACADEMY
+# Stakeholder Analysis Table  
+## IT Code Academy
 
-| Stakeholder                  | Role                                                                 | Key Concerns                                      | Pain Points                                      | Success Metrics                                      |
-|------------------------------|----------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------------|------------------------------------------------------|
-| Students (Youth Learners)    | Primary end-users accessing free lessons, quizzes and progress tracking | Free access, intuitive mobile-friendly interface, real-time progress | No structured free ICT education in communities; hard to track learning | ≥70% course completion rate; ≥90% usability satisfaction |
-| Instructors                  | Content creators who build courses, lessons and quizzes              | Easy content upload & automated grading tools     | Manual processes and no integrated platform      | Course created/published in ≤2 hours; 50% less grading time |
-| System Administrators        | Oversee user management, security and platform operations            | Data security, system uptime and monitoring       | Manual user verifications and multi-service tracking | 99.9% uptime; admin issues resolved in ≤1 hour       |
-| Parents/Guardians            | Monitor youth learners' progress and safety                          | Child safety online and visibility into activity  | No oversight tools in digital learning           | Weekly progress reports delivered; ≥80% parental approval |
-| IT Support Staff             | Maintain system, integrations (Stripe, SendGrid, Twilio) and troubleshooting | Reliable third-party integrations and logs        | Integration failures and deployment complexity   | Mean time to resolution ≤30 min; 100% integration uptime |
-| Payment Gateway Providers (Stripe/PayFast) | Handle secure certification payments                        | PCI-DSS compliance and seamless API integration   | Transaction failures and security breaches       | 100% successful transactions; zero breaches          |
-| Notification Service Providers (SendGrid/Twilio) | Deliver email & SMS reminders and announcements             | High delivery rate and cost efficiency            | Failed deliveries reducing user engagement       | ≥95% delivery rate; 20% increase in user retention   |
+| Stakeholder | Role | Key Concerns | Pain Points | Success Metrics |
+|------------|------|-------------|-------------|----------------|
+| Student (Youth Learner) | Primary end-user accessing lessons, quizzes, and progress tracking | Free access, intuitive mobile-friendly interface, real-time progress | Lack of structured ICT education; difficulty tracking learning | ≥70% course completion rate; ≥90% usability satisfaction |
+| Instructor | Creates courses, lessons, and quizzes | Easy content upload, automated grading | Manual processes, no integrated platform | Course created in ≤2 hours; 50% reduction in grading time |
+| Administrator | Manages users, security, and system operations | Data security, system uptime, monitoring | Manual user verification, fragmented systems | 99.9% uptime; issues resolved in ≤1 hour |
+| Parent/Guardian | Monitors student progress and activity | Visibility into learning progress, safety | Lack of monitoring tools | Weekly reports delivered; ≥80% satisfaction |
+| IT Support Staff | Maintains system and integrations | Reliable integrations, system logs | Integration failures, deployment complexity | Resolution time ≤30 minutes; stable integrations |
+| Payment Gateway Provider | Processes certification payments | Secure transactions, API reliability | Transaction failures, security risks | High transaction success rate; zero breaches |
+| Notification Service Provider | Sends email and SMS notifications | Delivery reliability, cost efficiency | Failed notifications | ≥95% delivery rate; improved engagement |
