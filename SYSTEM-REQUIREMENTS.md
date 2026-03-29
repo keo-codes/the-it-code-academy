@@ -1,5 +1,5 @@
-# System Requirements Document (SRD)
-## IT Code Academy
+# SYSTEM REQUIREMENTS DOCUMENT (SRD)
+## THE IT CODE ACADEMY
 
 **Project:** Web-based ICT & programming learning platform for youth in underserved communities  
 **Builds on:** [SPECIFICATION.md](./SPECIFICATION.md)
