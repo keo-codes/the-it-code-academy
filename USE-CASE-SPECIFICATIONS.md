@@ -1,5 +1,5 @@
-# Use Case Specifications  
-## IT Code Academy System
+# USE CASE SPECIFICATIONS 
+## THE IT CODE ACADEMY SYSTEM
 
 ---
 
