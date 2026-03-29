@@ -1,7 +1,6 @@
-# Use Case Diagram (Mermaid)
+# Use Case Diagrams
 
-## THE IT CODE ACADEMY System
-
+### Mermaid 
 ```mermaid
 graph LR
     %% =============================================
@@ -90,6 +89,12 @@ graph LR
 
 ```
 
-### Use Case Diagram Picture
+### Use Case Diagram Picture from Draw.io
 
 ![Use Case Diagram](Use-Case-Diagrams/Use-Case-Diagram.png)
+
+---
+
+### Use Case Diagram Drawio File
+
+![Use Case Diagram](Use-Case-Diagrams/Use-Case-Diagram.draw.io)
