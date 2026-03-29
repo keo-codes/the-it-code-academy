@@ -1,65 +1,68 @@
-# System Requirements Document (SRD) - THE IT CODE ACADEMY
+# System Requirements Document (SRD)
+## IT Code Academy
 
-**Project**: Web-based ICT & programming learning platform for youth in underserved communities  
-**Builds directly on**: Assignment 3 [SPECIFICATION.md](SPECIFICATION.md) (MVP scope, user roles, course/quiz/progress/certification/notification features)
+**Project:** Web-based ICT & programming learning platform for youth in underserved communities  
+**Builds on:** [SPECIFICATION.md](./SPECIFICATION.md)
+
+---
 
 ## 1. Stakeholder Analysis
-See separate file: [STAKEHOLDER-ANALYSIS.md](STAKEHOLDER-ANALYSIS.md) for the complete table (7 stakeholders with roles, concerns, pain points and metrics). All requirements below are traceable to these stakeholders.
+See: [STAKEHOLDER-ANALYSIS.md](./STAKEHOLDER-ANALYSIS.md)
+
+All requirements below are derived from stakeholder roles, concerns, pain points, and success metrics.
+
+---
 
 ## 2. Functional Requirements
 
-1. The system shall allow users to register an account with email/password and select role (Student, Instructor or Admin).  
-   *Acceptance criteria*: Email verification link sent; duplicate emails blocked.
+| ID | Requirement | Acceptance Criteria |
+|----|------------|-------------------|
+| **FR-001** | The system shall allow users to create an account with email, password, and role selection (Student, Instructor, Administrator). | Email verification is sent and duplicate emails are blocked. |
+| **FR-002** | The system shall authenticate users and enforce role-based access control (RBAC). | Only valid credentials grant access with correct permissions. |
+| **FR-003** | The system shall allow instructors to create and publish courses. | Course is saved and visible to students. |
+| **FR-004** | The system shall allow instructors to upload lesson content (text, video, PDF) with version control. | Content is accessible and version history is maintained. |
+| **FR-005** | The system shall allow students to browse courses by title or topic. | Results display relevant courses with availability status. |
+| **FR-006** | The system shall allow students to enroll in courses. | Enrollment confirmation is displayed. |
+| **FR-007** | The system shall allow instructors to create multiple-choice quizzes. | Quiz is saved and linked to course content. |
+| **FR-008** | The system shall allow students to complete quizzes with automatic grading. | Score is calculated and stored. |
+| **FR-009** | The system shall display real-time student progress. | Dashboard updates immediately after activity. |
+| **FR-010** | The system shall process certification payments via a payment gateway. | Payment status updates on success or failure. |
+| **FR-011** | The system shall send automated notifications (email/SMS). | Notifications are delivered within defined time limits. |
+| **FR-012** | The system shall allow administrators to manage users. | Admin actions are applied successfully. |
+| **FR-013** | The system shall generate weekly progress reports. | Reports are downloadable and accurate. |
 
-2. The system shall authenticate users with secure login and enforce role-based access control (RBAC).
-
-3. The system shall enable Instructors to create courses, upload lessons (text/video) and publish them.
-
-4. The system shall allow Students to browse courses by title/topic and enroll in any free course.
-
-5. The system shall permit Instructors to create multiple-choice quizzes with automatic grading and score storage.
-
-6. The system shall track and display real-time student progress on a personal dashboard (lessons completed, quiz scores, course percentage).
-
-7. The system shall process certification payments via integrated gateway (Stripe or PayFast) and update eligibility status on success.
-
-8. The system shall send automated notifications (email via SendGrid, SMS via Twilio) for course updates, quiz reminders and payment confirmations.
-
-9. The system shall allow Administrators to approve/delete user accounts and monitor platform usage.
-
-10. The system shall generate and export weekly progress reports for Students and Parents/Guardians.
-
-11. The system shall support lesson content upload (PDF/video) by Instructors with version control.
-
-12. The system shall provide a search function that returns course results with real-time availability status.
-
-(All functional requirements directly address pain points and concerns listed in the stakeholder table.)
+---
 
 ## 3. Non-Functional Requirements
 
-**Usability**  
-- The user interface shall be fully responsive and comply with WCAG 2.1 accessibility standards (critical for low-bandwidth users in underserved communities).  
-- The system shall provide tooltips and guided onboarding for first-time Students.
+### Usability
+- The system shall provide a responsive interface.
+- The system shall comply with WCAG 2.1 accessibility standards.
+- The system shall provide onboarding guidance for new users.
 
-**Deployability**  
-- The system shall be deployable on cloud platforms (Heroku or AWS Linux servers) using standard CI/CD pipelines.
+### Deployability
+- The system shall be deployable on cloud platforms (e.g., AWS, Linux servers).
+- The system shall support CI/CD pipelines.
 
-**Maintainability**  
-- All third-party integrations (Stripe, SendGrid, Twilio) shall include full API documentation and modular code structure.  
-- The codebase shall use clear separation of concerns so new lesson types can be added without system-wide changes.
+### Maintainability
+- The system shall use modular architecture.
+- The system shall include API documentation for integrations.
 
-**Scalability**  
-- The system shall support 1,000 concurrent users during peak hours (e.g., exam periods) with <5% performance degradation.
+### Scalability
+- The system shall support at least 1,000 concurrent users.
 
-**Security**  
-- All user data and payment information shall be encrypted using AES-256.  
-- Authentication shall use HTTPS and JWT tokens with automatic session expiry.
+### Security
+- The system shall encrypt data using AES-256.
+- The system shall use HTTPS and JWT authentication.
 
-**Performance**  
-- Course pages and dashboards shall load in ≤3 seconds on average internet connections.  
-- Quiz grading and notification dispatch shall complete in ≤1 second.
+### Performance
+- The system shall load pages within 3 seconds.
+- The system shall process quizzes and notifications within 1 second.
 
-(All non-functional requirements are measurable and address the quality attributes listed in the assignment.)
+---
 
-## 4. Traceability Note
-Every requirement above is explicitly linked to at least one stakeholder concern/pain point from the Stakeholder Analysis Table and the MVP scope in SPECIFICATION.md.
+## 4. Alignment Statement
+
+All requirements align with:
+- Stakeholder concerns defined in [STAKEHOLDER-ANALYSIS.md](./STAKEHOLDER-ANALYSIS.md)
+- System scope defined in [SPECIFICATION.md](./SPECIFICATION.md)
