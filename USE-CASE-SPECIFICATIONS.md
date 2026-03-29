@@ -1,129 +1,194 @@
-# USE CASE SPECIFICATIONS
-**THE IT CODE ACADEMY System**
+# Use Case Specifications  
+## IT Code Academy System
 
-## USE CASE 1: Create User Account
+---
 
+## Use Case 1: Create User Account  
 **Actor:** Student / Instructor / Administrator  
-**Description:** New users register for an account on the IT Code Academy platform.  
-**Preconditions:** User is not registered.  
-**Postconditions:** Account is created and stored in the database; verification email is sent.  
+**Supports:** FR-001  
 
-**Basic Flow:** 
-1. User enters email, password, and selects role.  
-2. System validates email uniqueness and sends verification link.  
-3. User clicks verification link.  
-4. System activates the account.  
+**Description:** New users register for an account on the platform.  
 
-**Alternative Flows:**  
-- Email already exists → Error message and suggestion to login instead.  
-- Verification link expires → Prompt to resend verification.
+**Preconditions:**  
+- User is not registered  
 
-## USE CASE 2: Login
-
-**Actor:** Student / Instructor / Administrator / Parent  
-**Description:** User logs into the system. **This use case includes the Authenticate use case.**  
-**Preconditions:** Account exists.  
-**Postconditions:** User is authenticated and redirected to role-specific dashboard.  
+**Postconditions:**  
+- Account is created  
+- Verification email is sent  
 
 **Basic Flow:**  
-1. User enters email and password.  
-2. System **includes** the Authenticate use case.  
-3. System verifies credentials and issues JWT token.  
-4. Access is granted.  
+1. User enters email, password, and selects role  
+2. System validates email uniqueness  
+3. System sends verification link  
+4. User clicks verification link  
+5. System activates account  
 
 **Alternative Flows:**  
-- Invalid credentials → Login fails (after 3 attempts account is locked).  
-- Account not verified → Prompt to verify email first.
+- Email already exists → Show error and prompt login  
+- Verification link expires → Prompt resend  
 
-## USE CASE 3: Browse Courses
+---
 
+## Use Case 2: Login  
+**Actor:** Student / Instructor / Administrator / Parent/Guardian  
+**Supports:** FR-002  
+
+**Description:** User logs into the system (includes authentication).  
+
+**Preconditions:**  
+- Account exists  
+
+**Postconditions:**  
+- User is authenticated  
+- User is redirected to dashboard  
+
+**Basic Flow:**  
+1. User enters email and password  
+2. System authenticates user  
+3. System generates JWT token  
+4. Access is granted  
+
+**Alternative Flows:**  
+- Invalid credentials → Access denied  
+- Account not verified → Prompt verification  
+
+---
+
+## Use Case 3: Browse Courses  
 **Actor:** Student  
-**Description:** Student searches and views available courses.  
-**Preconditions:** User is logged in.  
-**Postconditions:** Course list is displayed with real-time availability.  
+**Supports:** FR-005  
+
+**Description:** Student searches and views courses.  
+
+**Preconditions:**  
+- User is logged in  
+
+**Postconditions:**  
+- Courses are displayed  
 
 **Basic Flow:**  
-1. Student enters search term or applies filters.  
-2. System returns matching courses.  
+1. Student enters search term or filters  
+2. System returns matching courses  
 
 **Alternative Flows:**  
-- No results → “No courses found” message with suggestions.
+- No results → Show message  
 
-## USE CASE 4: Enroll Course
+---
 
+## Use Case 4: Enroll Course  
 **Actor:** Student  
-**Description:** Student enrolls in a course. **This use case includes the Checks Availability use case.**  
-**Preconditions:** Logged in and course is available.  
-**Postconditions:** Enrollment recorded and progress tracking begins.  
+**Supports:** FR-006  
+
+**Description:** Student enrolls in a course.  
+
+**Preconditions:**  
+- Student is logged in  
+- Course is available  
+
+**Postconditions:**  
+- Enrollment is recorded  
+- Progress tracking begins  
 
 **Basic Flow:**  
-1. Student browses and selects course.  
-2. System **includes** the Checks Availability use case.  
-3. Student confirms enrollment.  
-4. System records enrollment.  
+1. Student selects course  
+2. System checks availability  
+3. Student confirms enrollment  
+4. System records enrollment  
 
 **Alternative Flows:**  
-- Already enrolled → “Already enrolled” message.  
-- Course full → Waitlist option offered.
+- Already enrolled → Show message  
+- Course full → Offer waitlist  
 
-## USE CASE 5: Take Lessons
+---
 
+## Use Case 5: Take Lessons  
 **Actor:** Student  
-**Description:** Student accesses course lessons.  
-**Preconditions:** Enrolled in the course.  
-**Postconditions:** Lesson marked as accessed; progress updated.  
+**Supports:** FR-006  
+
+**Description:** Student accesses lessons.  
+
+**Preconditions:**  
+- Student is enrolled  
+
+**Postconditions:**  
+- Lesson accessed  
+- Progress updated  
 
 **Basic Flow:**  
-1. Student opens enrolled course.  
-2. Selects lesson.  
-3. Content is displayed.  
+1. Student opens course  
+2. Selects lesson  
+3. Content is displayed  
 
 **Alternative Flows:**  
-- Lesson locked → Prompt to complete prerequisites.
+- Lesson locked → Prompt prerequisite  
 
-## USE CASE 6: Take Quiz
+---
 
+## Use Case 6: Take Quiz  
 **Actor:** Student  
-**Description:** Student attempts a course quiz. **This use case includes the Checks Availability use case.**  
-**Preconditions:** Enrolled in course and quiz is available.  
-**Postconditions:** Score recorded and progress updated.  
+**Supports:** FR-008  
+
+**Description:** Student completes a quiz.  
+
+**Preconditions:**  
+- Student is enrolled  
+- Quiz is available  
+
+**Postconditions:**  
+- Score recorded  
+- Progress updated  
 
 **Basic Flow:**  
-1. Student starts quiz.  
-2. System **includes** the Checks Availability use case.  
-3. Answers multiple-choice questions.  
-4. Submits quiz.  
-5. System auto-grades and shows results.  
+1. Student starts quiz  
+2. Student answers questions  
+3. Student submits quiz  
+4. System grades automatically  
+5. Results displayed  
 
 **Alternative Flows:**  
-- Time expires → Auto-submit with partial score.
+- Time expires → Auto-submit  
 
-## USE CASE 7: Create Course
+---
 
+## Use Case 7: Create Course  
 **Actor:** Instructor  
-**Description:** Instructor creates a new course.  
-**Preconditions:** Instructor is logged in.  
-**Postconditions:** Course is saved as draft and can be published.  
+**Supports:** FR-003  
+
+**Description:** Instructor creates a course.  
+
+**Preconditions:**  
+- Instructor is logged in  
+
+**Postconditions:**  
+- Course saved  
 
 **Basic Flow:**  
-1. Instructor enters title, description, topic.  
-2. System saves draft.  
+1. Instructor enters course details  
+2. System saves course  
 
 **Alternative Flows:**  
-- Missing required fields → Validation error.
+- Missing fields → Validation error  
 
-## USE CASE 8: Process Payment
+---
 
+## Use Case 8: Process Payment  
 **Actor:** Student  
-**Description:** Student pays for certificate after course completion. **This use case includes the Payment Gateway use case and is extended by Handle Failed Payment.**  
-**Preconditions:** Course completed.  
-**Postconditions:** Payment recorded, certificate eligibility updated, notification sent.  
+**Supports:** FR-010  
+
+**Description:** Student processes payment for certification.  
+
+**Preconditions:**  
+- Course completed  
+
+**Postconditions:**  
+- Payment recorded  
+- Status updated  
 
 **Basic Flow:**  
-1. Student selects certificate.  
-2. System **includes** the Payment Gateway use case.  
-3. Payment succeeds → Status updated.  
+1. Student selects certificate  
+2. System processes payment  
+3. Payment successful  
+4. Status updated  
 
-**Alternative Flows / Extension:**  
-- Payment fails → The **Handle Failed Payment** use case is executed (<<extend>>).  
-  - System shows error message and offers retry or alternative payment method.
+**Alternative Flows:**  
+- Payment fails → Show error and retry option  
