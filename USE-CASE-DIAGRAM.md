@@ -80,7 +80,7 @@ graph LR
     UC2 -.->|<<include>>| UC3
     UC5 -.->|<<include>>| UC18
     UC7 -.->|<<include>>| UC18
-
+```
 ---
 
 ### Use Case Diagram Picture
