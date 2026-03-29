@@ -1,4 +1,4 @@
-# THE IT CODE ACADEMY - Use Case Diagram
+# IT Code Academy - Use Case Diagram (Mermaid.js)
 
 ```mermaid
 usecase
