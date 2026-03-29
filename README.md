@@ -4,38 +4,48 @@
 
 THE IT CODE ACADEMY is a web-based learning platform designed to provide **accessible ICT and programming education** to youth in underserved communities.
 
-The platform allows learners to access **structured programming lessons**, complete **quizzes and assessments**, and **track their learning progress** through an online system. While educational content is freely accessible, learners may optionally pay for **certification programs** to receive formal recognition of their skills.
+The platform allows learners to access **structured programming lessons**, complete **quizzes and assessments**, and **track their learning progress**. While learning content is free, users may optionally pay for **certification programs**.
 
-The goal of the platform is to help reduce barriers to digital education by providing an **affordable, structured, and accessible learning environment**.
+The goal is to reduce barriers to digital education by providing an **affordable, structured, and accessible learning environment**.
+
+---
 
 ## Key Features
 
-- Free ICT and programming lessons
-- Structured learning modules
-- Quiz and assessment system
-- Student progress tracking
-- Instructor course management
-- Optional paid certification pathway
-- Notification support (email and SMS)
+- Free ICT and programming lessons  
+- Structured learning modules  
+- Quiz and assessment system  
+- Student progress tracking  
+- Instructor course management  
+- Optional paid certification  
+- Notification support (email and SMS)  
 
 ---
 
 ## Documentation
 
 ### System Specification
-This document describes the **system requirements, domain, problem statement, and scope** of THE IT CODE ACADEMY platform.
-
-[SPECIFICATION.md](SPECIFICATION.md)
+Describes the **domain, problem, and system scope**.  
+[SPECIFICATION.md](./SPECIFICATION.md)
 
 ### System Architecture
-This document contains the **C4 architectural diagrams** and explains the system structure, containers, and internal components.
+Contains **C4 diagrams** and system structure.  
+[ARCHITECTURE.md](./ARCHITECTURE.md)
 
-[ARCHITECTURE.md](ARCHITECTURE.md)
+### Requirements & Analysis
+- [Stakeholder Analysis Table](./STAKEHOLDER-ANALYSIS.md)  
+- [System Requirements Document (SRD)](./SYSTEM-REQUIREMENTS.md)  
+
+### Design & Testing
+- [Use Case Specifications](./USE-CASES.md)  
+- [Test Cases](./TEST-CASES.md)  
+
+### Reflection
+- [Final Reflection](./REFLECTION.md)  
 
 ---
 
 ## Repository Structure
----
 
 ```markdown
 THE-IT-CODE-ACADEMY
@@ -43,6 +53,11 @@ THE-IT-CODE-ACADEMY
 ├── README.md
 ├── SPECIFICATION.md
 ├── ARCHITECTURE.md
+├── STAKEHOLDER-ANALYSIS.md
+├── SYSTEM-REQUIREMENTS.md
+├── USE-CASES.md
+├── TEST-CASES.md
+├── REFLECTION.md
 │
 └── C4-Diagrams
     ├── system-context-diagram.png
