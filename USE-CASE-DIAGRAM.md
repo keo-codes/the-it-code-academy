@@ -81,13 +81,12 @@ graph LR
     UC5 -.->|<<include>>| UC18
     UC7 -.->|<<include>>| UC18
 ```
----
 
 ### Use Case Diagram Picture
 
-![System Context Diagram](Use-Case-Diagram/Use-Case-Diagram.png)
+![Use Case Diagram](Use-Case-Diagram/Use-Case-Diagram.png)
 
----
+
 
     %% STYLING
     classDef usecase fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000;
