@@ -1,257 +1,211 @@
-# System Specification
+# SYSTEM SPECIFICATION
 
 ## Project Title
 THE IT CODE ACADEMY
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-## 1.1 Domain
+### 1.1 Domain
 
-The system operates within the **Education Technology (EdTech)** domain. Education Technology focuses on the use of digital platforms and software systems to improve access to education, learning resources, and skills development.
+The system operates within the **Education Technology (EdTech)** domain. Education Technology focuses on using digital platforms to improve access to education, learning resources, and skills development.
 
-THE IT CODE ACADEMY is designed to provide an online learning platform where students can learn programming and ICT skills through structured lessons, quizzes, and certification programs.
+THE IT CODE ACADEMY provides an online platform where students learn programming and ICT skills through structured lessons, quizzes, and certification programs.
 
-The platform aims to support youth in underserved communities by providing affordable and accessible digital education. Students will be able to access learning content, track their progress, and obtain certifications, while instructors can manage courses and assessments through the system.
-
----
-
-## 1.2 Problem Statement
-
-Many young people in underserved communities face barriers when trying to access quality ICT and programming education. Traditional learning institutions can be expensive, geographically inaccessible, or lack modern technology resources.
-
-Existing online learning platforms often require paid subscriptions or do not provide localized support for learners.
-
-THE IT CODE ACADEMY addresses this challenge by providing:
-
-- Free access to programming lessons
-- Structured courses designed for beginners
-- Quizzes to test understanding
-- Progress tracking for learners
-- Optional paid certification
-- Notification services to support engagement
-
-The system aims to provide an accessible and structured digital learning environment that helps students develop valuable technology skills.
+The platform supports youth in underserved communities by providing accessible and affordable digital education. Students access content, track progress, and obtain certifications, while instructors manage courses and assessments.
 
 ---
 
-## 1.3 Individual Scope
+### 1.2 Problem Statement
 
-This project will implement a **Minimum Viable Product (MVP)** of THE IT CODE ACADEMY platform.
+Many young people in underserved communities face barriers to accessing quality ICT and programming education. Traditional institutions are often expensive, inaccessible, or lack modern resources.
 
-The MVP will include the following core functionalities:
+Existing online platforms may require subscriptions or lack localized support.
 
-### User Management
-The system will support three types of users:
+THE IT CODE ACADEMY addresses these challenges by providing:
 
-- **Students** – enroll in courses, complete lessons, take quizzes, and track progress.
-- **Instructors** – create and manage courses, lessons, and quizzes.
-- **Administrators** – manage users, monitor system activity, and control platform settings.
+- Free access to programming lessons  
+- Structured beginner-friendly courses  
+- Quizzes for assessment  
+- Student progress tracking  
+- Optional paid certification  
+- Notification services for engagement  
 
-### Course Management
-Instructors will be able to:
-
-- Create courses
-- Add lessons to courses
-- Upload learning materials
-- Manage course content
-
-Students will be able to:
-
-- Browse available courses
-- Enroll in courses
-- Access lessons
-
-### Quiz and Assessment System
-The platform will allow instructors to create quizzes for lessons. Students can attempt quizzes, and the system will automatically calculate scores.
-
-### Progress Tracking
-The system will track:
-
-- Lessons completed
-- Quiz results
-- Course completion progress
-
-Students will be able to monitor their learning progress through the platform dashboard.
-
-### Certification and Payments
-Students will be able to subscribe to certification programs. Payment processing will be handled through a **third-party payment gateway** such as Stripe or PayFast.
-
-### Notifications
-The system will send notifications to users through:
-
-- Email notifications (SendGrid)
-- SMS notifications (Twilio)
-
-These notifications will be used for:
-
-- Course updates
-- Quiz reminders
-- Payment confirmations
-- System announcements
+The system provides an accessible and structured digital learning environment for skill development.
 
 ---
 
-# 2. System Features
+### 1.3 Individual Scope (MVP)
 
-## 2.1 User Registration and Authentication
-Users will be able to create accounts and log into the system securely.
-
-Features include:
-
-- User registration
-- Login authentication
-- Role-based access control
-- Password security
+This project implements a **Minimum Viable Product (MVP)** of the THE IT CODE ACADEMY platform.
 
 ---
 
-## 2.2 Course Management
+#### User Management
 
-Instructors will be able to create and manage courses.
+The system supports three user roles:
 
-Functions include:
-
-- Create course
-- Update course information
-- Add lessons
-- Delete or modify course content
-
-Students will be able to:
-
-- View available courses
-- Enroll in courses
-- Access lesson content
+- **Student** – Enroll Course, Take Lessons, Take Quiz, View Student Progress  
+- **Instructor** – Create Course, Upload Lessons, Create Quiz  
+- **Administrator** – Manage Users and system operations  
 
 ---
 
-## 2.3 Quiz Management
+#### Course Management
 
-The system will support quizzes associated with lessons.
+**Instructors can:**
+- Create Course  
+- Upload Lessons  
+- Manage course content  
 
-Features include:
-
-- Creating quizzes
-- Multiple choice questions
-- Automatic grading
-- Score recording
-
----
-
-## 2.4 Progress Tracking
-
-The system will track student learning progress.
-
-Progress tracking includes:
-
-- Completed lessons
-- Quiz scores
-- Overall course progress
-
-Students will be able to view their progress through their dashboard.
+**Students can:**
+- Browse Courses  
+- Enroll Course  
+- Access lessons  
 
 ---
 
-## 2.5 Certification and Payments
+#### Quiz and Assessment System
 
-Students may choose to pay for certification after completing a course.
-
-Features include:
-
-- Payment processing via Stripe or PayFast
-- Subscription management
-- Certification eligibility tracking
+- Create Quiz  
+- Multiple-choice questions  
+- Automatic grading  
+- Score storage  
 
 ---
 
-## 2.6 Notification System
+#### Progress Tracking
 
-The system will notify users using external communication services.
+The system tracks:
 
-Notifications include:
+- Lessons completed  
+- Quiz results  
+- Course completion progress  
 
-- Course announcements
-- Quiz reminders
-- Payment confirmations
-- System alerts
-
-Communication services include:
-
-- SendGrid (Email)
-- Twilio (SMS)
+Students view progress via dashboard.
 
 ---
 
-# 3. System Users
+#### Certification and Payments
 
-## Student
-Students are the primary users of the platform.
-
-They can:
-
-- Register and log in
-- Browse courses
-- Enroll in courses
-- Complete lessons
-- Take quizzes
-- Track learning progress
-- Purchase certifications
+- Process Payment via third-party gateway (Stripe or PayFast)  
+- Certification eligibility tracking  
 
 ---
 
-## Instructor
+#### Notifications
 
-Instructors manage educational content.
+The system sends notifications via:
 
-They can:
+- Email (SendGrid)  
+- SMS (Twilio)  
 
-- Create courses
-- Upload lessons
-- Create quizzes
-- Monitor student progress
-
----
-
-## Administrator
-
-Administrators manage the overall system.
-
-Responsibilities include:
-
-- Managing users
-- Monitoring platform activity
-- Managing system settings
-- Ensuring platform reliability
+Used for:
+- Course updates  
+- Quiz reminders  
+- Payment confirmations  
+- System announcements  
 
 ---
 
-# 4. System Constraints
+## 2. System Features
 
-The system will operate under the following constraints:
-
-- Internet connectivity is required to access the platform.
-- Payment services depend on third-party payment providers.
-- Notification services depend on external email and SMS providers.
-
----
-
-# 5. Assumptions
-
-The following assumptions are made for the MVP system:
-
-- The system will initially use **dummy data** for testing.
-- Users will access the platform through a web browser.
-- External services such as Stripe, SendGrid, and Twilio will be simulated during development if necessary.
+### 2.1 Create User Account & Authenticate User
+- Create User Account  
+- Login  
+- Authenticate User  
+- Role-based access control  
 
 ---
 
-# 6. Future Improvements
+### 2.2 Course Management
+- Create Course  
+- Upload Lessons  
+- Modify course content  
+- Browse Courses  
+- Enroll Course  
+- Access lessons  
 
-Future versions of THE IT CODE ACADEMY may include:
+---
 
-- Mobile application support
-- Video-based lessons
-- AI-powered learning recommendations
-- Discussion forums for students
-- Gamification features such as badges and leaderboards
+### 2.3 Quiz Management
+- Create Quiz  
+- Attempt quizzes  
+- Automatic grading  
+- Score recording  
+
+---
+
+### 2.4 Progress Tracking
+- Track completed lessons  
+- Track quiz scores  
+- Display course progress  
+
+---
+
+### 2.5 Certification and Payments
+- Process Payment  
+- Certification tracking  
+
+---
+
+### 2.6 Notification System
+- Send Notifications (email/SMS)  
+- Course announcements  
+- Quiz reminders  
+- Payment confirmations  
+
+---
+
+## 3. System Users
+
+### Student
+- Create User Account and Login  
+- Browse Courses  
+- Enroll Course  
+- Take Lessons  
+- Take Quiz  
+- View Student Progress  
+- Process Payment for certification  
+
+---
+
+### Instructor
+- Create Course  
+- Upload Lessons  
+- Create Quiz  
+- Monitor student progress  
+
+---
+
+### Administrator
+- Manage Users  
+- Monitor system activity  
+- Maintain system operations  
+
+---
+
+## 4. System Constraints
+
+- Internet connection required  
+- Payment depends on third-party gateway  
+- Notifications depend on external services  
+
+---
+
+## 5. Assumptions
+
+- Dummy data used for initial testing  
+- Access via web browser  
+- External services may be simulated during development  
+
+---
+
+## 6. Future Improvements
+
+- Mobile application support  
+- Video-based lessons  
+- AI-based recommendations  
+- Discussion forums  
+- Gamification (badges, leaderboards)  
