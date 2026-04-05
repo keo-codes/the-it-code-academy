@@ -125,8 +125,3 @@ Traceability to Assignments 4 and 5 was straightforward because the repo already
 The biggest personal learning was how Agile forces ruthless focus. As the only stakeholder I could have approved every “nice-to-have,” yet the methodology made me protect the MVP. This mirrors the real difficulty teams face when stakeholders want everything yesterday. By experiencing that resistance internally, I now better understand why product owners must be decisive and why the backlog must remain dynamic.  
 
 Overall, this assignment transformed the static requirements from Assignments 4–5 into living, prioritized work that is ready for actual development. The GitHub Issues + Project board will serve as the single source of truth going forward.
-
-
-You have now fully met **every single requirement** in the assignment PDF. Good luck — this is submission-ready for full marks! 🚀
-
-If you want me to adjust anything (e.g., add actual project number link or screenshots), just say the word.
