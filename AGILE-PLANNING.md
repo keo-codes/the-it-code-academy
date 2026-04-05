@@ -1,11 +1,6 @@
 # AGILE USER STORIES, BACKLOG, & SPRINT PLANNING
 
-**Project:** The IT Code Academy  
-**Repository:** [https://github.com/keo-codes/the-it-code-academy](https://github.com/keo-codes/the-it-code-academy)  
-**GitHub Project Board:** [IT Code Academy Backlog](https://github.com/keo-codes/the-it-code-academy/projects) (click **Product Backlog** and **Sprint 1** views)  
-**Author:** Keo-codes  
-**Date:** April 2026
-
+**GitHub Project Board:** [THE IT CODE ACADEMY BACKLOG](https://github.com/keo-codes/the-it-code-academy/projects) (click **Product Backlog** and **Sprint 1** views) 
 ---
 
 ## Objective
@@ -16,10 +11,7 @@ All user stories are directly mapped to functional requirements (FR-XXX) from `S
 
 ---
 
-## 1. User Story Creation (30 Marks)
-
-**12 user stories** created (8+ from functional requirements + 4+ from use cases).  
-All stories follow the required format and meet **INVEST** criteria.
+## User Story Creation
 
 **View all user stories as GitHub Issues:** [Issues → label:user-story](https://github.com/keo-codes/the-it-code-academy/issues?q=is%3Aissue+label%3Auser-story)
 
@@ -40,14 +32,12 @@ All stories follow the required format and meet **INVEST** criteria.
 | US-011 | As any user, I want to receive automated email/SMS notifications so that I stay informed about deadlines, progress and updates. | Notifications delivered within defined time limits. | Medium | FR-011 |
 | US-012 | As an administrator, I want to manage user accounts so that I can maintain platform security and support users. | Admin can view/edit/block users; changes applied immediately. | Low | FR-012 |
 
-**Non-Functional Story (example as per assignment):**  
+**Non-Functional Story:**  
 As a system administrator, I want all user data encrypted with AES-256 and HTTPS enforced so that security compliance is met.
 
 ---
 
-## 2. Product Backlog Creation (30 Marks)
-
-**MoSCoW prioritization** applied. Effort estimates use **Fibonacci story points**.
+## Product Backlog Creation
 
 **View full Product Backlog (GitHub Project):** [Product Backlog View](https://github.com/keo-codes/the-it-code-academy/projects) → select **Product Backlog**
 
@@ -73,7 +63,7 @@ Must-have stories deliver the complete student learning flow (register → login
 
 ---
 
-## 3. Sprint Planning (30 Marks)
+## Sprint Planning
 
 **Sprint 1 Goal (2-week sprint):**  
 “Deliver a functional MVP core that allows new students to register, log in, browse available courses, enroll, complete a quiz, and view their real-time progress — enabling the first end-to-end learning experience.”
@@ -101,10 +91,10 @@ By the end of this sprint, students will be able to complete the full “discove
 
 ---
 
-## 4. GitHub Agile Tools Used (as required)
+## GitHub Agile Tools Used
 
 - **GitHub Issues** – 12 user stories created as issues with acceptance criteria, priorities, and tasks  
-- **GitHub Project** – “IT Code Academy Backlog” with two Kanban Board views:  
+- **GitHub Project** – “THE IT CODE ACADEMY BACKLOG” with two Kanban Board views:  
   - [Product Backlog view](https://github.com/keo-codes/the-it-code-academy/projects) (all 12 stories)  
   - [Sprint 1 view](https://github.com/keo-codes/the-it-code-academy/projects) (filtered to 6 sprint stories)  
 - **Labels** – `user-story`, `enhancement`, `must-have`, `should-have`, `could-have`, `sprint-1`  
