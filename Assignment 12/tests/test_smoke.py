@@ -1,2 +1,2 @@
 def test_smoke():
-    assert True, "Basic smoke test passed"
+    assert False, "Intentional failure for Assignment 13 screenshot"
