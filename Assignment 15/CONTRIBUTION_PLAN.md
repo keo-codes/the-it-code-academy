@@ -51,7 +51,7 @@ For Assignment 15, I selected **four peer repositories** that had clear `CONTRIB
 
 **Strategy**: Focus on code quality improvement while keeping changes clean and non-breaking. Tested thoroughly locally.
 
-**Status**: PR submitted → [PR #47](https://github.com/Makunga0471/PRASA-System/pull/42) (**Merged**)
+**Status**: PR submitted → [PR #42](https://github.com/Makunga0471/PRASA-System/pull/42) (**Merged**)
 
 ## Overall Contribution Strategy
 
