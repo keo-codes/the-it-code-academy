@@ -64,7 +64,7 @@ This file tracks the status of all Pull Requests submitted as part of Assignment
 
 **Validation**: Manually tested all operations and error cases locally.
 
-**Status**: Submitted and **awaiting review** (Merged).
+**Status**: **MERGED**
 
 ---
 
