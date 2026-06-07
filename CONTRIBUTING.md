@@ -45,3 +45,26 @@ We follow the Contributor Covenant Code of Conduct. We expect all contributors t
 ```bash
 git clone https://github.com/YOUR_USERNAME/the-it-code-academy.git
 cd the-it-code-academy
+cd "Assignment 12"
+pip install -r requirements.txt
+python -m pytest tests/ -v
+```
+
+---
+
+## Coding Standards
+
+- Keep changes focused and easy to review.
+- Use clear names for files, classes, functions, and variables.
+- Add or update tests when you change behavior.
+- Run the relevant tests before opening a Pull Request.
+
+---
+
+## How to Contribute
+
+1. Choose an open issue or propose a small improvement.
+2. Create a branch with a descriptive name.
+3. Make the smallest change that solves the issue.
+4. Verify the change locally.
+5. Open a Pull Request and describe what changed.

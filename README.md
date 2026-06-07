@@ -14,19 +14,18 @@ The goal is to reduce barriers to digital education by providing an **affordable
 
 ### Quick Local Setup
 
-
-# Clone the repository
 ```bash
+# Clone the repository
 git clone https://github.com/keo-codes/the-it-code-academy.git
 cd the-it-code-academy
-```
 
-# Backend Setup
+# Backend setup
 cd "Assignment 12"
 pip install -r requirements.txt
 
 # Run tests to verify everything works
 python -m pytest tests/ -v
+```
 
 ### Features Open for Contribution
 
@@ -68,11 +67,11 @@ Contains **C4 diagrams** and system structure.
 - [System Requirements Document (SRD)](./SYSTEM-REQUIREMENTS.md)  
 
 ### Design & Testing
-- [Use Case Specifications](./USE-CASES.md)  
+- [Use Case Specifications](./USE-CASE-SPECIFICATIONS.md)
 - [Test Cases](./TEST-CASES.md)  
 
 ### Reflection
-- [Final Reflection](./REFLECTION.md)  
+- [Final Reflection](Assignment%2015/REFLECTION.md)
 
 ---
 
@@ -86,9 +85,9 @@ THE-IT-CODE-ACADEMY
 ├── ARCHITECTURE.md
 ├── STAKEHOLDER-ANALYSIS.md
 ├── SYSTEM-REQUIREMENTS.md
-├── USE-CASES.md
+├── USE-CASE-SPECIFICATIONS.md
 ├── TEST-CASES.md
-├── REFLECTION.md
+├── Assignment 15/REFLECTION.md
 │
 └── C4-Diagrams
     ├── system-context-diagram.png
