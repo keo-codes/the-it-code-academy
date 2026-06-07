@@ -51,7 +51,7 @@ For Assignment 15, I selected **three peer repositories** that had clear `CONTRI
 
 **Strategy**: Focus on code quality improvement while keeping changes clean and non-breaking. Tested thoroughly locally.
 
-**Status**: PR submitted → [PR Link Here](https://github.com/Makunga0471/PRASA-System/pull/YOUR_PR_NUMBER) (**Awaiting review**)
+**Status**: PR submitted → [PR #47](https://github.com/Makunga0471/PRASA-System/pull/42) (**Awaiting review**)
 
 ## Overall Contribution Strategy
 
