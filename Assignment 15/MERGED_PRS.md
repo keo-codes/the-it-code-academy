@@ -2,7 +2,7 @@
 
 ## Overview
 
-This file tracks the status of all Pull Requests submitted as part of Assignment 15. While 2 have been merged and 2 awaiting peer review, each PR follows best practices and adds clear value.
+This file tracks the status of all Pull Requests submitted as part of Assignment 15. While 3 have been merged and 1 awaiting peer review, each PR follows best practices and adds clear value.
 
 ---
 
