@@ -33,7 +33,7 @@ This file tracks the status of all Pull Requests submitted as part of Assignment
 
 **Validation**: Full Maven test suite ran successfully (**57 tests passed**, 0 failures).
 
-**Status**: Submitted and **awaiting review** (not yet merged).
+**Status**: **MERGED**.
 
 ---
 
