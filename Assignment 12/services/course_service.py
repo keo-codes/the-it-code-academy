@@ -22,10 +22,16 @@ class CourseService:
         with open(self.file_path, 'w') as f:
             json.dump(self.courses, f, indent=2)
 
+    def _get_course_by_id(self, course_id: int):
+        return next((c for c in self.courses if c["course_id"] == course_id), None)
+
     def create_course(self, course_id: int, title: str, description: str, instructor_id: int = 1):
-        if not title:
+        if not title or not title.strip():
             raise ValueError("Course title is required")
-        
+
+        if self._get_course_by_id(course_id):
+            raise ValueError(f"Course with ID {course_id} already exists.")
+
         course = {
             "course_id": course_id,
             "title": title,
@@ -40,20 +46,24 @@ class CourseService:
         return self.courses
 
     def update_course(self, course_id: int, title: str = None, description: str = None):
-        course = next((c for c in self.courses if c["course_id"] == course_id), None)
+        course = self._get_course_by_id(course_id)
         if not course:
             raise ValueError(f"Course with ID {course_id} not found")
-        
-        if title: course["title"] = title
+
+        if title is not None:
+            if not title.strip():
+                raise ValueError("Course title is required")
+            course["title"] = title
+
         if description: course["description"] = description
         self._save_courses()
         return course
 
     def delete_course(self, course_id: int):
-        course = next((c for c in self.courses if c["course_id"] == course_id), None)
+        course = self._get_course_by_id(course_id)
         if not course:
             raise ValueError(f"Course with ID {course_id} not found")
-        
+
         self.courses.remove(course)
         self._save_courses()
         return f"Course {course_id} deleted successfully"
