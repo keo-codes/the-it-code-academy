@@ -26,7 +26,7 @@ All PRs were created following the project's guidelines, with clear titles, desc
    - **Status**: Merged.
 
 4. **PRASA-System** (Makunga0471)
-   - [PR #42]((https://github.com/Makunga0471/PRASA-System/pull/42)
+   - [PR #42](https://github.com/Makunga0471/PRASA-System/pull/42)
    - **Changes**: Improved calculator with interactive CLI menu, input validation, error handling (division by zero), and added docstrings.
    - **Status**: Submitted and awaiting review.
 
