@@ -1,7 +1,7 @@
 # CROSS-PROJECT CONTRIBUTIONS
 
 ## Overview
-For Assignment 15, I selected **three peer repositories** that had clear `CONTRIBUTING.md` guidelines or labeled issues. I focused on small, high-impact, non-breaking contributions (primarily documentation improvements) to maximize the chance of acceptance.
+For Assignment 15, I selected **four peer repositories** that had clear `CONTRIBUTING.md` guidelines or labeled issues. I focused on small, high-impact, non-breaking contributions (primarily documentation improvements) to maximize the chance of acceptance.
 
 ## Selected Projects & Strategy
 
@@ -51,7 +51,7 @@ For Assignment 15, I selected **three peer repositories** that had clear `CONTRI
 
 **Strategy**: Focus on code quality improvement while keeping changes clean and non-breaking. Tested thoroughly locally.
 
-**Status**: PR submitted → [PR #47](https://github.com/Makunga0471/PRASA-System/pull/42) (**Awaiting review**)
+**Status**: PR submitted → [PR #47](https://github.com/Makunga0471/PRASA-System/pull/42) (**Merged**)
 
 ## Overall Contribution Strategy
 
