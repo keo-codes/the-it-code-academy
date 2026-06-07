@@ -55,7 +55,7 @@ This file tracks the status of all Pull Requests submitted as part of Assignment
 
 **Repository**: [Makunga0471/PRASA-System](https://github.com/Makunga0471/PRASA-System)
 
-**PR Link**: [PR #47](https://github.com/Makunga0471/PRASA-System/pull/47)
+**PR Link**: [PR #42](https://github.com/Makunga0471/PRASA-System/pull/42)
 
 **Summary of Changes**:
 - Improved the calculator with an interactive CLI menu for better user experience.
