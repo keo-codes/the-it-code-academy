@@ -30,6 +30,16 @@ def root():
     return {"message": "✅ THE IT CODE ACADEMY API IS RUNNING - Assignment 12"}
 
 # ===================== STUDENT CRUD =====================
+# New endpoint to get a student's enrollments
+@app.get("/api/students/{student_id}/enrollments")
+def get_student_enrollments(student_id: int):
+    return enrollment_service.get_student_courses(student_id)
+   def get_student_courses(self, student_id):
+
+    return {
+        "student_id": student_id,
+        "courses": self.enrollments.get(student_id, [])
+    } 
 @app.get("/api/students")
 def get_all_students():
     return student_service.get_all_students()
