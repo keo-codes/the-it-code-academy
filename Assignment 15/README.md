@@ -17,7 +17,7 @@ This folder contains all deliverables for **Assignment 15**. I contributed to th
 2. **Car Wash Booking System** — [PR #71](https://github.com/ongeziwe17/carwash-booking-queue-system/pull/71)  
 3. **Gym Management System** — [PR #1](https://github.com/Nasiphivundle/Gym-Management-System/pull/1)  
 
-**Current Status**: All 3 PRs submitted and awaiting peer review.
+**Current Status**: 3 PRs submitted, 1 merged, and 2 awaiting peer review.
 
 ## Key Achievements
 - Followed open-source best practices (fork → branch → PR workflow).
