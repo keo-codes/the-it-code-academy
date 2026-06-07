@@ -4,7 +4,7 @@
 
 ## Current Stats (May 19, 2026)
 - **Stars:** 26 
-- **Forks:** 28 
+- **Forks:** 29 
 - **Open Issues:** 15+
 - **Pull Requests:** 0
 
