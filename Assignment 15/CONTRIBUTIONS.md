@@ -31,7 +31,7 @@ All PRs were created following the project's guidelines, with clear titles, desc
    - **Status**: Merged.
 
 ## Merged PRs
-See [MERGED_PRS.md](./MERGED_PRS.md) for current status (2 merged so far — 2 awaiting peer review).
+See [MERGED_PRS.md](./MERGED_PRS.md) for current status (3 merged so far — 1 awaiting peer review).
 
 ## Reflection
 See [REFLECTION.md](./REFLECTION.md).
