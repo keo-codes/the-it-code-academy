@@ -27,7 +27,7 @@ For Assignment 15, I selected **four peer repositories** that had clear `CONTRIB
 
 **Validation**: Ran full Maven test suite (57 tests passed, 0 failures).
 
-**Status**: PR submitted → [PR #71](https://github.com/ongeziwe17/carwash-booking-queue-system/pull/71) (**Awaiting review**)
+**Status**: PR submitted → [PR #71](https://github.com/ongeziwe17/carwash-booking-queue-system/pull/71) (**Merged**)
 
 ---
 
