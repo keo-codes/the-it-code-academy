@@ -6,7 +6,7 @@
 - **Stars:** 26 
 - **Forks:** 30 
 - **Open Issues:** 15+
-- **Pull Requests:** 0
+- **Pull Requests:** 4
 
 ## Issues Created for Contributors
 - **8 good-first-issue** labels created
