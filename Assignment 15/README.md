@@ -18,7 +18,7 @@ This folder contains all deliverables for **Assignment 15**. I contributed to fo
 3. **Gym Management System** — [PR #1](https://github.com/Nasiphivundle/Gym-Management-System/pull/1)
 4. **PRASA-System** — [PR #47](https://github.com/Makunga0471/PRASA-System/pull/47)
 
-**Current Status**: 4 PRs submitted, 1 merged, and 3 awaiting peer review.
+**Current Status**: 4 PRs submitted, 2 merged, and 2 awaiting peer review.
 
 ## Key Achievements
 - Followed open-source best practices (fork → branch → PR workflow).
