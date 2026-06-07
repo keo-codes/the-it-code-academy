@@ -33,13 +33,11 @@ def root():
 # New endpoint to get a student's enrollments
 @app.get("/api/students/{student_id}/enrollments")
 def get_student_enrollments(student_id: int):
-    return enrollment_service.get_student_courses(student_id)
-   def get_student_courses(self, student_id):
+    try:
+        return enrollment_service.get_student_courses(student_id)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
 
-    return {
-        "student_id": student_id,
-        "courses": self.enrollments.get(student_id, [])
-    } 
 @app.get("/api/students")
 def get_all_students():
     return student_service.get_all_students()
@@ -106,7 +104,7 @@ def enroll_student(student_id: int, course_id: int):
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-print("🚀 THE IT CODE ACADEMY API IS READY!")
+print("THE IT CODE ACADEMY API IS READY!")
 print("Visit: http://localhost:8000/docs")
 
 if __name__ == "__main__":
