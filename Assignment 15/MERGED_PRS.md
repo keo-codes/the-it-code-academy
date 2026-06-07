@@ -2,7 +2,7 @@
 
 ## Overview
 
-This file tracks the status of all Pull Requests submitted as part of Assignment 15. While none have been merged yet (all awaiting peer review), each PR follows best practices and adds clear value.
+This file tracks the status of all Pull Requests submitted as part of Assignment 15. While 2 have been merged and 2 awaiting peer review, each PR follows best practices and adds clear value.
 
 ---
 
@@ -64,9 +64,9 @@ This file tracks the status of all Pull Requests submitted as part of Assignment
 
 **Validation**: Manually tested all operations and error cases locally.
 
-**Status**: Submitted and **awaiting review** (not yet merged).
+**Status**: Submitted and **awaiting review** (Merged).
 
 ---
 
 **Note**:
-I will update this file immediately if any PRs get merged. All contributions were small, focused, and followed each project's existing style to maximize acceptance chances.
+I will update this file immediately when all PRs get merged. All contributions were small, focused, and followed each project's existing style to maximize acceptance chances.
