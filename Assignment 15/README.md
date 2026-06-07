@@ -16,7 +16,7 @@ This folder contains all deliverables for **Assignment 15**. I contributed to fo
 1. **Personal Expense Tracker** — [PR #11](https://github.com/MeiZ-7715/Personal-Expense-Tracker/pull/11)
 2. **Car Wash Booking System** — [PR #71](https://github.com/ongeziwe17/carwash-booking-queue-system/pull/71)
 3. **Gym Management System** — [PR #1](https://github.com/Nasiphivundle/Gym-Management-System/pull/1)
-4. **PRASA-System** — [PR #47](https://github.com/Makunga0471/PRASA-System/pull/47)
+4. **PRASA-System** — [PR #42](https://github.com/Makunga0471/PRASA-System/pull/42)
 
 **Current Status**: 4 PRs submitted, 2 merged, and 2 awaiting peer review.
 
