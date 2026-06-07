@@ -18,7 +18,7 @@ All PRs were created following the project's guidelines, with clear titles, desc
    - [PR #71](https://github.com/ongeziwe17/carwash-booking-queue-system/pull/71)
    - **Changes**: Added comprehensive Swagger/OpenAPI documentation for User endpoints (`@Operation` and `@ApiResponses`).
    - **Validation**: Full Maven test suite executed — **57 tests passed, 0 failures**.
-   - **Status**: Submitted and awaiting review.
+   - **Status**: Merged.
 
 3. **Gym Management System** (Nasiphivundle)
    - [PR #1](https://github.com/Nasiphivundle/Gym-Management-System/pull/1)
