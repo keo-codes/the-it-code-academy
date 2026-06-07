@@ -28,10 +28,10 @@ All PRs were created following the project's guidelines, with clear titles, desc
 4. **PRASA-System** (Makunga0471)
    - [PR #42](https://github.com/Makunga0471/PRASA-System/pull/42)
    - **Changes**: Improved calculator with interactive CLI menu, input validation, error handling (division by zero), and added docstrings.
-   - **Status**: Submitted and awaiting review.
+   - **Status**: Merged.
 
 ## Merged PRs
-See [MERGED_PRS.md](./MERGED_PRS.md) for current status (1 merged so far — 3 awaiting peer review).
+See [MERGED_PRS.md](./MERGED_PRS.md) for current status (2 merged so far — 2 awaiting peer review).
 
 ## Reflection
 See [REFLECTION.md](./REFLECTION.md).
