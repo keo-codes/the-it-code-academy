@@ -32,3 +32,15 @@ class EnrollmentService:
             "message": f"Student {student_id} successfully enrolled in course {course_id}",
             "student": student
         }
+
+    def get_student_courses(self, student_id: int):
+        """Return the current course IDs for a student."""
+        student = self.student_service.get_student_by_id(student_id)
+
+        if not student:
+            raise ValueError(f"Student with ID {student_id} not found")
+
+        return {
+            "student_id": student_id,
+            "courses": student.get("enrolled_courses", []),
+        }
